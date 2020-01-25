@@ -3,7 +3,6 @@
 %bcond_with	javadoc		# don't build javadoc
 
 %define		srcname	osgi.core
-%include	/usr/lib/rpm/macros.java
 Summary:	OSGi Service Platform Core API (Companion Code)
 Name:		java-osgi-core
 Version:	4.3.1
