@@ -6,7 +6,7 @@
 Summary:	OSGi Service Platform Core API (Companion Code)
 Name:		java-osgi-core
 Version:	4.3.1
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries/Java
 URL:		http://www.osgi.org/Specifications/HomePage
