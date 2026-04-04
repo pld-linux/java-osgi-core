@@ -2,20 +2,22 @@
 # Conditional build:
 %bcond_with	javadoc		# don't build javadoc
 
+%{?use_default_jdk:%use_default_jdk 8}
+
 %define		srcname	osgi.core
 Summary:	OSGi Service Platform Core API (Companion Code)
 Name:		java-osgi-core
 Version:	4.3.1
-Release:	2
+Release:	3
 License:	Apache v2.0
 Group:		Libraries/Java
 URL:		http://www.osgi.org/Specifications/HomePage
 Source0:	http://www.osgi.org/download/r4v43/osgi.core-%{version}.jar
 # Source0-md5:	5a9d55c73d7f477cfbcb8d7adfec3deb
-BuildRequires:	jdk
+%buildrequires_jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.556
 %if %(locale -a | grep -q '^en_US$'; echo $?)
 BuildRequires:	glibc-localedb-all
 %endif
