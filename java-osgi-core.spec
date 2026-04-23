@@ -17,7 +17,7 @@ Source0:	http://www.osgi.org/download/r4v43/osgi.core-%{version}.jar
 %buildrequires_jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.556
+BuildRequires:	rpmbuild(macros) >= 2.021
 %if %(locale -a | grep -q '^en_US$'; echo $?)
 BuildRequires:	glibc-localedb-all
 %endif
